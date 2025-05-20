@@ -154,11 +154,12 @@
       <li><a href="logincursos.html" target="_blank" rel="noopener noreferrer" class="block w-full py-1 hover:text-azulino">SANGHA Web</a></li>
       
       <li>
-        <a href="mailto:finanzas.saludables.emprende@gmail.com?subject=Consulta%20sobre%20la%20incubadora" class="block w-full py-1 hover:text-azulino flex items-center space-x-2">
-          <i class="fas fa-envelope"></i>
-          <span>Contacto</span>
-        </a>
-      </li>
+  <a id="contactoMail" href="#" 
+     class="block w-full py-1 hover:text-azulino flex items-center space-x-2">
+    <i class="fas fa-envelope"></i>
+    <span>Contacto</span>
+  </a>
+</li>
       <li class="flex flex-row gap-2 mt-2 lg:mt-0">
         <a href="index.html" class="flex items-center gap-1 bg-white text-[#80142f] text-sm px-2 py-1 rounded-md shadow hover:bg-gray-100">
           <img src="./images/ar.png" alt="Español" class="w-4 h-4 rounded-sm" />
@@ -334,27 +335,42 @@
     </section>
 
     
+<!-- Comunidad -->
+<section id="comunidad" class="py-20 px-6 bg-verdeingles text-center">
+  <h2 class="text-5xl font-semibold mb-6 text-white">Sumate a FINANZAS SALUDABLES</h2>
+  <p class="max-w-xl mx-auto mb-6 text-lg text-white">
+    Recibí recursos, novedades y muchas cosas más sobre nuestro ecosistema emprendedor.
+  </p>
 
+  <!-- Formulario -->
+  <form id="formComunidad" class="max-w-xl mx-auto space-y-4">
+    <div class="text-left">
+      <label for="nombreUsuario" class="block text-sm font-medium text-white mb-1">Tu nombre:</label>
+      <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Ej: Juan Pérez"
+             class="w-full rounded-md border-gray-300 shadow-sm focus:border-azulino focus:ring focus:ring-azulino focus:ring-opacity-50 p-2" required>
+    </div>
+
+    <div class="flex">
+      <input
+        id="correoUsuario"
+        type="email"
+        placeholder="Tu correo electrónico"
+        class="flex-grow px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none"
+        required
+      />
+      <button type="submit"
+        class="bg-azulino text-white px-4 py-2 rounded-r-md hover:bg-azulbase transition">
+        Suscribirme
+      </button>
+    </div>
+  </form>
+
+  <!-- Mensaje de confirmación -->
+  <p id="mensajeSuscripcion" class="mt-4 text-green-100 hidden">¡Gracias por suscribirte!</p>
+</section>
     
 
-    <!-- Comunidad -->
-    <section id="comunidad" class="py-20 px-6 bg-verdeingles text-center">
-      <h2 class="text-5xl font-semibold mb-6 text-white">Sumate a FINANZAS SALUDABLES</h2>
-      <p class="max-w-xl mx-auto mb-6 text-lg text-white">
-        Recibí recursos, novedades y muchas cosas mas sobre nuestro ecosistema emprendedor.
-      </p>
-      <div class="flex justify-center flex-wrap gap-2">
-        <input
-          type="email"
-          placeholder="Tu correo electrónico"
-          class="px-4 py-2 rounded-l-xl border border-gray-300"
-        />
-        <button class="bg-azulino text-white px-4 py-2 rounded-r-xl hover:bg-azulbase transition">
-          Suscribirme
-        </button>
-      </div>
-    </section>
-
+  
    <!-- FOOTER -->
 <footer class="bg-azulmarino text-white text-center py-6">
   <div class="flex justify-center items-center gap-6 mb-4 flex-wrap">
@@ -400,6 +416,59 @@
       });
     });
   </script>
+
+<script>
+  document.getElementById('contactoMail').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombreUsuario')?.value || '[Nombre]';
+
+    const asunto = 'Consulta sobre el Coaching Finanzas Saludables';
+    const cuerpo = `Hola, me comunico para realizar una consulta sobre la Comunidad Finanzas Saludables.%0A%0AMi pregunta es:%0A%0AQuedo atento/a a su respuesta.%0A%0AMuchas gracias.%0A%0ASaludos,%0A${encodeURIComponent(nombre)}`;
+
+    const mailtoLink = `mailto:finanzas.saludables.emprende@gmail.com?subject=${encodeURIComponent(asunto)}&body=${cuerpo}`;
+
+    window.location.href = mailtoLink;
+  });
+</script>
+
+<script>
+  document.getElementById('formComunidad').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombreUsuario').value.trim();
+    const email = document.getElementById('correoUsuario').value.trim();
+
+    if (!nombre || !email) return;
+
+    // Reemplazá esta URL con la que te dio SheetBest
+    const endpoint = "https://api.sheetbest.com/sheets/5c1c5dc7-d22e-4014-95d7-5005d25b56c2";
+
+    const data = {
+      nombre: nombre,
+      email: email
+    };
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        document.getElementById('mensajeSuscripcion').classList.remove('hidden');
+        document.getElementById('formComunidad').reset();
+      } else {
+        alert("Hubo un error al enviar tus datos. Intentá más tarde.");
+      }
+    } catch (error) {
+      alert("Error de red. Verificá tu conexión.");
+      console.error(error);
+    }
+  });
+</script>
+
 
   
  
