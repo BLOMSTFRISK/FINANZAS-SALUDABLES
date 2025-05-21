@@ -150,7 +150,7 @@
     <!-- Menú visible en LG y desplegable en SM/MD -->
     <ul id="menu" class="hidden lg:flex lg:flex-row items-start lg:items-center gap-4 text-base font text-verdepetroleo">
     
-      <li><a href="#sobre" class="block w-full py-1 hover:text-azulino">Sobre Finanzas Saludables</a></li>
+      <li><a href="#sobre" class="block w-full py-1 hover:text-azulino">Sobre FINANZAS SALUDABLES</a></li>
       <li><a href="#estudios" class="block w-full py-1 hover:text-azulino">Sobre SANGHA</a></li>
       <li><a href="logincursos.html" target="_blank" rel="noopener noreferrer" class="block w-full py-1 hover:text-azulino">SANGHA Web</a></li>
       
@@ -172,57 +172,48 @@
     </ul>
   </nav>
   
-  
-      <!-- HERO con logo de fondo -->
+  <!-- HERO principal con texto y logo al costado -->
 
-      <section
-
-      id="inicio"
-  class="relative h-[calc(100vh-80px)] bg-center bg-no-repeat flex items-center justify-center"
-  style="background-image: url('images/logoazuladosintexto.png'); background-size: 35%;"
+  <section 
+  id="fs"
+  class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-20 gap-12"
 >
-  <!-- Enlace invisible para permitir clic -->
-  <a href="#fs" class="absolute inset-0 z-20 cursor-pointer" aria-label="Ir al inicio"></a>
+  <!-- Texto -->
+  <div class="md:w-1/2 text-center md:text-left">
+    <h2 class="text-5xl md:text-7xl text-azulino font-bold mb-2">FINANZAS SALUDABLES</h2>
+    <h2 class="text-5xl md:text-5xl text-azulino font-bold mb-6 leading-tight">COACHING FINANCIERO</h2>
 
-  <div class="absolute inset-0 bg-black/0.025"></div>
+    <p class="text-lb text-verdepetroloscuro mb-4">
+      "Tus finanzas pueden ser sostenibles, saludables y positivas, porque nuestro enfoque de coaching es consciente, equilibrado y orientado al bienestar integral. No se trata solo de números, sino de una relación armoniosa con el dinero, que te permita vivir con tranquilidad, tomar decisiones informadas y alinear tus recursos con tus verdaderos valores y objetivos de vida. Te acompañamos en un proceso de transformación personal y financiera, donde el equilibrio, la claridad y la sostenibilidad son pilares fundamentales."
+    </p>
+    <p class="text-xl text-azulmarino mb-8">
+      <strong> Te invitamos a que conozcas nuestro espacio.</strong>
+    </p>
 
-  <div class="relative z-10 text-white text-center animate-fade-in">
-  
+   <!-- Botones en fila -->
+<div class="grid grid-cols-4 gap-4 max-w-4xl mx-auto md:mx-0 mt-6">
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
+    SANGHA
+  </a>
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
+    CURSOS
+  </a>
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
+    SERVICIOS
+  </a>
+  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
+    EDICIONES
+  </a>
+</div>
+</div>
+
+  <!-- Logo -->
+  <div class="md:w-1/2 flex justify-center">
+    <img src="images/logoazuladosintexto.png" alt="Logo Finanzas Saludables" class="w-full max-w-lg" />
   </div>
 </section>
-  
-    
-      <!-- Hero principal con texto -->
-      <section 
-      id="fs"
-      class="text-center py-20 px-4">
-       
-        <h2 class="text-7xl text-azulino text-bold mb-4">FINANZAS SALUDABLES</h2>
-         <h2 class="text-6xl text-azulino text-bold mb-4">COACHING FINANCIERO</h2>
-        <p class="text-xl text-verdepetroloscuro max-w-xl mx-auto mb-8">
-          Tus finanzas pueden ser sostenibles, saludables y positivas, porque nuestro enfoque de coaching es consciente, equilibrado y orientado al bienestar integral.
-        </p>
-        <p class="text-xl text-verdepetroloscuro mx-auto mb-8">
-            Te invitamos a que conozcas nuestro espacio.
-          </p>
 
-          <div class="flex flex-wrap justify-center gap-4">
-           
-            <a href="#estudios" class="bg-verdeingles text-white px-6 py-3 rounded-2xl text-lg font-bold shadow hover:bg-verdeinglesclaro transition inline-block">
-              CAPACITACIONES Y CURSOS
-            </a>
-            <a href="#estudios" class="bg-verdeingles text-white px-6 py-3 rounded-2xl text-lg font-bold shadow hover:bg-verdeinglesclaro transition inline-block">
-              SERVICIOS Y ASESORIAS
-            </a>
-            <a href="#estudios" class="bg-verdeingles text-white px-6 py-3 rounded-2xl text-lg font-bold shadow hover:bg-verdeinglesclaro transition inline-block">
-              SANGHA
-            </a>
-            <a href="#estudios" class="bg-verdeingles text-white px-6 py-3 rounded-2xl text-lg font-bold shadow hover:bg-verdeinglesclaro transition inline-block">
-              PROXIMAS EDICIONES
-            </a>
-          </div>
-          
-      </section>
+ 
   
   <!-- Animaciones personalizadas -->
   <style>
@@ -251,6 +242,7 @@
    <section id="sobre" class="py-20 px-6 bg-verdepalta text-center">
   <div class="mx-auto px-6 py-20 bg-verdepetroloscuro rounded-2xl max-w-3xl">
     <h2 class="text-5xl text-white font-semibold mb-6">Sobre Finanzas Saludables</h2>
+     <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
     <div class="text-white text-lg leading-relaxed space-y-6 text-justify sm:text-center">
       <p><strong>FINANZAS SALUDABLES</strong> es un programa de coaching financiero pensado para acompañarte en la transformación de tu relación con el dinero, tus decisiones económicas y el desarrollo estratégico de tus recursos.</p>
       <p>Nace como un espacio de aprendizaje, acompañamiento y acción concreta, con múltiples ediciones orientadas a distintos públicos. En esta edición especial, está dirigido a <strong>emprendedores, profesionales independientes, cooperativas y pequeñas empresas</strong>, que buscan ordenar sus números, tomar decisiones conscientes y construir un camino financiero sostenible.</p>
@@ -290,7 +282,7 @@
           </div>
         
  <!-- ASESORIA -->
-        <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepetro hover:scale-105 transition">
+        <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdeingles hover:scale-105 transition">
             <div class="text-6xl mb-4 h-20 flex items-center text-[5rem]  justify-center">
               <div class="w-16 h-16 flex items-center justify-center">
                <i class="fas fa-handshake"></i>
@@ -304,7 +296,7 @@
           </div>
 
         <!-- SANGHA -->
-        <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdeingles hover:scale-105 transition">
+        <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepalta hover:scale-105 transition">
             <div class="flex items-center justify-center text-[5rem] hover:scale-125 transition"> 
               <div class="relative w-20 h-20 flex items-center justify-center">
              <i class="fas fa-spa"></i>
@@ -366,8 +358,24 @@
   </form>
 
   <!-- Mensaje de confirmación -->
-  <p id="mensajeSuscripcion" class="mt-4 text-green-100 hidden">¡Gracias por suscribirte!</p>
+  <p id="mensajeSuscripcion" class="mt-6 text-green-100 hidden">¡Gracias por suscribirte!</p>
 </section>
+
+<!-- Botón flotante de WhatsApp con estilos corregidos -->
+<div class="fixed bottom-6 right-6 z-50">
+  <a href="https://wa.me/549XXXXXXXXXX"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transition-transform transform hover:scale-110">
+
+    <!-- Ícono de WhatsApp -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 32 32" fill="currentColor">
+      <path d="M16.001 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.59 4.45 1.71 6.39L3.2 28.8l6.6-1.73c1.83.96 3.9 1.47 6.2 1.47 7.07 0 12.8-5.73 12.8-12.8s-5.73-12.8-12.8-12.8zm0 23.2c-2.01 0-3.95-.56-5.63-1.61l-.4-.24-3.92 1.03 1.05-3.82-.26-.41a10.44 10.44 0 01-1.54-5.44c0-5.77 4.7-10.48 10.48-10.48s10.48 4.7 10.48 10.48-4.7 10.48-10.48 10.48zm5.38-7.56c-.3-.15-1.77-.88-2.05-.98s-.48-.15-.68.15-.79 1-.96 1.21-.36.24-.66.08a8.33 8.33 0 01-2.4-1.47 9.49 9.49 0 01-1.69-2.13c-.18-.3 0-.47.14-.63s.32-.36.48-.54c.15-.18.32-.39.44-.61a.58.58 0 000-.55c-.15-.15-.68-1.67-.94-2.29s-.5-.53-.69-.54h-.57c-.22 0-.56.08-.86.38s-1.13 1.1-1.13 2.68 1.15 3.1 1.32 3.28c.16.16 2.27 3.43 5.5 4.81a19.25 19.25 0 001.9.7 4.56 4.56 0 002.1.14c.63-.1 1.87-.75 2.13-1.48.27-.74.27-1.35.19-1.46s-.3-.23-.6-.38z"/>
+    </svg>
+  </a>
+</div>
+
+
     
 <!-- PREFOOTER -->
 
