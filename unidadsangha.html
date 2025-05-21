@@ -1,5 +1,5 @@
- 
- <!DOCTYPE html>
+
+<!DOCTYPE html>
     <html lang="es">
 
     <head>
@@ -69,6 +69,7 @@
                 amarillooro: '#D7B04B',
                 amarillolimon: '#D9ED92',
                 amarillo: '#FFCF56',
+                fondocalido: '#FDFCFB',
 
               },
               fontSize: {
@@ -172,228 +173,183 @@
     </ul>
   </nav>
   
-  <!-- HERO principal con texto y logo al costado -->
 
-  <section 
-  id="fs"
-  class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-20 gap-12"
->
-  <!-- Texto -->
-  <div class="md:w-1/2 text-center md:text-left">
-    <h2 class="text-5xl md:text-7xl text-azulino font-bold mb-2">FINANZAS SALUDABLES</h2>
-    <h2 class="text-5xl md:text-5xl text-azulino font-bold mb-6 leading-tight">COACHING FINANCIERO</h2>
+   <!-- LOGO de SANGHA(compacto arriba del título) -->
 
-    <p class="text-lb text-verdepetroloscuro mb-4">
-      "Tus finanzas pueden ser sostenibles, saludables y positivas, porque nuestro enfoque de coaching es consciente, equilibrado y orientado al bienestar integral. No se trata solo de números, sino de una relación armoniosa con el dinero, que te permita vivir con tranquilidad, tomar decisiones informadas y alinear tus recursos con tus verdaderos valores y objetivos de vida. Te acompañamos en un proceso de transformación personal y financiera, donde el equilibrio, la claridad y la sostenibilidad son pilares fundamentales."
-    </p>
-    <p class="text-xl text-azulmarino mb-8">
-      <strong> Te invitamos a que conozcas nuestro espacio.</strong>
-    </p>
-
-   <!-- Botones en fila -->
-<div class="grid grid-cols-4 gap-4 max-w-4xl mx-auto md:mx-0 mt-6">
-  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
-    SANGHA
-  </a>
-  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
-    CURSOS
-  </a>
-  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
-    SERVICIOS
-  </a>
-  <a href="#estudios" class="h-12 flex items-center justify-center bg-verdeingles text-white px-3 rounded-xl text-sm font-bold shadow hover:bg-verdepalta transition text-center">
-    EDICIONES
-  </a>
-</div>
-</div>
-
-  <!-- Logo -->
-  <div class="md:w-1/2 flex justify-center">
-    <img src="images/logoazuladosintexto.png" alt="Logo Finanzas Saludables" class="w-full max-w-lg" />
-  </div>
-</section>
-
- 
-  
-  <!-- Animaciones personalizadas -->
-  <style>
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  
-    .animate-fade-in {
-      animation: fadeIn 1.2s ease-out forwards;
-    }
-  
-    .animate-fade-in-delay {
-      animation: fadeIn 1.2s ease-out 0.3s forwards;
-    }
-  </style>
-
-  <!-- Sobre -->
-
-   <section id="sobre" class="py-20 px-6 bg-verdepalta text-center">
-  <div class="mx-auto px-6 py-20 bg-verdepetroloscuro rounded-2xl max-w-3xl">
-    <h2 class="text-5xl text-white font-semibold mb-6">Sobre Finanzas Saludables</h2>
-     <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
-    <div class="text-white text-lg leading-relaxed space-y-6 text-justify sm:text-center">
-      <p><strong>FINANZAS SALUDABLES</strong> es un programa de coaching financiero pensado para acompañarte en la transformación de tu relación con el dinero, tus decisiones económicas y el desarrollo estratégico de tus recursos.</p>
-      <p>Nace como un espacio de aprendizaje, acompañamiento y acción concreta, con múltiples ediciones orientadas a distintos públicos. En esta edición especial, está dirigido a <strong>emprendedores, profesionales independientes, cooperativas y pequeñas empresas</strong>, que buscan ordenar sus números, tomar decisiones conscientes y construir un camino financiero sostenible.</p>
-      <p>Creemos que unas <strong>finanzas claras, ordenadas y alineadas con tus valores</strong> son clave para que cualquier proyecto crezca de forma saludable. Por eso, este programa integra herramientas prácticas, análisis personalizados, dinámicas grupales y asesoramiento individual, todo dentro de una comunidad que comparte experiencias, desafíos y soluciones.</p>
-      <p>Nuestra propuesta combina el enfoque técnico con la contención emocional, porque entendemos que <em>gestionar el dinero también es gestionar miedos, hábitos y creencias</em>. Y lo hacemos desde una mirada empática, profesional y cercana.</p>
-      <p><strong>FINANZAS SALUDABLES – Edición Emprendedores</strong> te invita a tomar el control de tus finanzas, con claridad, estrategia y propósito. Para que tu emprendimiento no solo sobreviva, sino que crezca, se ordene y prospere en el tiempo.</p>
-      <p>Ofrecemos un espacio para diagnosticar, aprender, diseñar y accionar. Porque unas finanzas saludables no son un lujo, son una base firme sobre la que podés construir el futuro que querés.</p>
+   <!-- LOGO y TÍTULO alineados y compactos -->
+<section class="pt-8 pb-4 px-2 bg-fondocalido flex justify-center">
+    <div class="max-w-6xl w-full mx-auto flex flex-col items-center">
+      <img src="images/logosanghacuadrado.png" alt="Logo SANGHA" class="h-20 sm:h-48 object-contain mb-4" />
+      <div class="relative w-full -mb-10 z-10">
+        <br>
+        <h2 class="bg-verdepetroloscuro text-white text-3xl sm:text-4xl font-bold px-6 py-3 rounded-xl shadow-lg w-full block text-center uppercase">
+          SANGHA COMUNIDAD EMPRENDEDORA Y FINANCIERA
+        </h2>
+      </div>
     </div>
-  </div>
+  </section>
+  
+  <!-- CAJA DE TEXTO alineada sin separación extra -->
+  <section class="py-20 px-6 bg-azulverdoso">
+    <div class="max-w-6xl mx-auto bg-verdepalta text-white rounded-2xl shadow-lg p-6 sm:p-10 text-base leading-relaxed space-y-4">
+      <p>
+  La SANGHA de Finanzas Saludables es una comunidad de aprendizaje, contención y crecimiento colectivo para emprendedores y emprendedoras que desean transformar su vínculo con el dinero y el trabajo desde una mirada integral. Es un espacio donde la experiencia individual se enriquece con la fuerza del grupo, promoviendo la colaboración, el respeto y el desarrollo personal y profesional.
+</p>
+<p>
+  La comunidad está organizada en espacios temáticos y actividades guiadas por profesionales del coaching financiero y otras disciplinas complementarias, que brindan herramientas, metodologías y acompañamiento para el fortalecimiento de los proyectos de cada integrante. Se fomenta el intercambio genuino y el trabajo en red como motores del crecimiento sustentable.
+</p>
+<p>
+  Cada instancia de la SANGHA —ya sea un encuentro, una dinámica grupal o una actividad formativa— está pensada para cultivar el bienestar, la claridad financiera y el empoderamiento emprendedor, entendiendo que el progreso económico también puede ser consciente, humano y en comunidad.
+</p>
+    </div>
 
-  <div class="text-center mt-8">
-    <a href="https://forms.gle/nwAM4uo8n2Hq824S9"
-       target="_blank" rel="noopener noreferrer"
-       class="inline-block bg-verdeingles text-white text-2xl font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-verdeinglesclaro transition">
-      Quiero formar parte de la comunidad
-    </a>
-  </div>
-</section>
+    <br>
 
-   <!-- Sección de estudios -->
-<section id="estudios" class="py-16 px-6 bg-azulverdoso">
-  <h2 class="text-5xl font-semibold text-center mb-16 text-white">LO QUE TENEMOS PARA OFRECERTE...</h2>
 
-  <div class="space-y-12 max-w-6xl mx-auto">
-
-     <!-- SANGHA -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepetroleo hover:scale-105 transition">
-        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
-          <div class="w-20 h-20 flex items-center justify-center">
-            <i class="fas fa-spa text-[5rem]"></i>
+    <!-- Sección de estudios -->
+    <section id="estudios" class="py-10 px-6 bg-verdeazulado">
+      <h2 class="text-7xl font-semibold text-center mb-12 text-white">SANGHA</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
+        <!-- MEMBRESIA -->
+        <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepetro hover:scale-105 transition">
+          <div class="text-6xl mb-4 h-20 flex items-center justify-center">
+          
+              <div class="w-16 h-16 flex items-center justify-center">
+                <i class="fas fa-user-friends" text-white text-[3.6rem]"></i>
+            </div>
+            <br>
           </div>
+          <h3 class="text-xl font-semibold mb-1">MEMBRESIA</h3>
+          <p class="text-sm text-white/80 mb-4">Primera escala: Comunidad y acompañamiento emprendedor. Encuentros, redes y recursos para fortalecer tu camino.</p>
+          <a href="index1diagnostico.html" target="_blank" rel="noopener noreferrer" class="bg-white text-verdepetro font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+            Ir al sitio Web
+          </a>
         </div>
-        <h3 class="text-xl font-semibold mb-1">SANGHA</h3>
-        <p class="text-m text-white/80 mb-4">Suscribite a la comunidad de emprendedores que potencia tu crecimiento.</p>
-        <a href="unidadsangha.html" target="_blank" class="bg-white text-verdepetroleo font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
-          Ir al sitio
-        </a>
-      </div>
-      <div class="text-white text-lg leading-relaxed">
-        <p>En nuestra comunidad encontrarás inspiración, una red de apoyo genuina y experiencias compartidas que enriquecen tu camino. La Sangha es mucho más que un grupo: es un espacio vivo, dinámico y amoroso, pensado para nutrir tu motivación, acompañarte en los desafíos y fortalecer tu conexión con otros emprendedores que, como vos, buscan crecer de manera consciente y sostenible. Aquí podrás compartir tus logros, dudas y aprendizajes, sabiendo que siempre vas a tener un lugar donde ser escuchado, impulsado y comprendido.
-        </p>
-        </div>
-     </div>
 
+        <!-- RECURSOS -->
+        <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdeingles hover:scale-105 transition">
+          <div class="text-6xl mb-4 h-20 flex items-center justify-center">
 
-    <!-- EQUIPO -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdeingles hover:scale-105 transition">
-        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
-          <div class="w-16 h-16 flex items-center justify-center">
-            <i class="fas fa-people-group text-[5rem]"></i>
+            <div class="w-16 h-16 flex items-center justify-center">
+              <i class="fas fa-gift text-white text-[3.6rem]"></i>
+            </div>
           </div>
+          <h3 class="text-xl font-semibold mb-1">RECURSOS BONUS</h3>
+          <p class="text-sm text-white/80 mb-4">Segunda escala: Recursos que inspiran. Accedé a guías, herramientas, bonus y contenidos exclusivos para nutrir tu desarrollo personal y emprendedor..</p>
+          <a href="index1branding.html" target="_blank" rel="noopener noreferrer" class="bg-white text-verdeingles font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+            Ver recursos
+          </a>
         </div>
-        <h3 class="text-xl font-semibold mb-1">EQUIPO DE TRABAJO</h3>
-        <p class="text-m text-white/80 mb-4">Conocé a los profesionales que conforman el equipo de Vero.</p>
-        <a href="historialdeproyectos.html" target="_blank" class="bg-white text-verdeingles font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
-          Conocenos
-        </a>
-      </div>
-      <div class="text-white text-lg leading-relaxed">
-        <p> Detrás de cada servicio y propuesta hay un equipo comprometido, humano y apasionado que trabaja con un propósito claro: acompañarte en la construcción de un bienestar financiero real, consciente y duradero. Cada integrante aporta su mirada, experiencia y vocación para ofrecerte un enfoque integral, cercano y personalizado. Conocelos, descubrí cómo trabajan en conjunto y por qué forman una red sólida que te impulsa a tomar decisiones más informadas, equilibradas y alineadas con tus valores y objetivos.
-    </p>
-        </div>
-     </div> 
 
-
-
-    <!-- CURSOS -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepalta hover:scale-105 transition">
-        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
-          <div class="w-16 h-16 flex items-center justify-center">
-            <i class="fas fa-chalkboard-teacher text-white text-[4.4rem]"></i>
+        <!-- TIENDA -->
+        <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-azulbase hover:scale-105 transition">
+            <div class="text-8xl mb-4 h-20 flex items-center justify-center">
+              <div class="w-16 h-16 flex items-center justify-center">
+                <i class="fas fa-shopping-cart text-white text-[3.6rem]"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-semibold mb-1">TIENDA</h3>
+            <p class="text-sm text-white/80 mb-4">Tercera escala: Tienda Consciente. Descubrí productos digitales y físicos diseñados para acompañarte en tu camino emprendedor con propósito y equilibrio.</p>
+            <a href="index1producto.html" target="_blank" rel="noopener noreferrer" class="bg-white text-azulbase font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
+              Ir a la tienda
+            </a>
           </div>
-        </div>
-        <h3 class="text-xl font-semibold mb-1">CURSOS</h3>
-        <p class="text-m text-white/80 mb-4">Profundiza conocimientos en finanzas, inversiones, ecommerce, gestión y diseño de productos.</p>
-        <a href="index1capacitaciones.html" target="_blank" class="bg-white text-verdepalta font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
-          Ir al sitio
-        </a>
+    </section>
+
+     <!-- LOGO y TÍTULO alineados y compactos -->
+<section class="pt-6 pb-6 px-4 bg-verdeazulado flex justify-center">
+    <div class="max-w-6xl w-full mx-auto flex flex-col items-center">
+      <div class="relative w-full -mb-10 z-10">
+        <br>
+        <h2 class="bg-verdepetroloscuro text-white text-3xl sm:text-4xl font-bold px-6 py-3 rounded-xl shadow-lg w-full block text-center uppercase">
+          EQUIPO DE PROFESIONALES
+        </h2>
       </div>
-      <div class="text-white text-lg leading-relaxed">
-        <p>Estos cursos están diseñados para acompañarte en cada etapa de tu camino emprendedor, brindándote las herramientas necesarias para profesionalizar y fortalecer tu proyecto. Ya sea que estés dando tus primeros pasos o que tengas un emprendimiento consolidado, siempre hay nuevas habilidades, enfoques y conocimientos que pueden marcar la diferencia. Nuestra propuesta formativa combina teoría accesible, práctica aplicada y una mirada integral que pone en el centro tu crecimiento personal y profesional. Porque creemos que emprender también es una forma de desarrollo humano.
-    </p>
-        </div>
-     </div>
-
-
-    <!-- ASESORIAS -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div class="rounded-2xl p-6 shadow text-white flex flex-col items-center text-center justify-between bg-verdepetroseco hover:scale-105 transition">
-        <div class="text-6xl mb-4 h-20 flex items-center justify-center">
-          <div class="w-16 h-16 flex items-center justify-center">
-            <i class="fas fa-handshake text-[4.4rem]"></i>
-          </div>
-        </div>
-        <h3 class="text-xl font-semibold mb-1">ASESORÍAS PERSONALIZADAS</h3>
-        <p class="text-m text-white/80 mb-4">Consultoría y acompañamiento para emprendedores y empresas.</p>
-        <a href="index1asistencia.html" target="_blank" class="bg-white text-verdepetroseco font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition">
-          Agendá tu turno
-        </a>
-      </div>
-      <div class="text-white text-lg leading-relaxed">
-        <p>  Trabajamos de manera personalizada, uno a uno, para comprender en detalle tu situación financiera actual, tus desafíos y tus metas. A través de un enfoque cercano y sin juicios, te ayudamos a tomar decisiones más claras, seguras y alineadas con tus verdaderos objetivos. Ya sea que necesites ordenar tus finanzas, planificar inversiones, salir de deudas o simplemente ganar mayor conciencia sobre tus hábitos económicos, nuestro acompañamiento está pensado para empoderarte, brindarte claridad y construir un camino sostenible hacia el bienestar financiero.  </p>
-        </div>
-     </div>
-
-
-      </div>
-</section>
-
-   
-
+    </div>
+  </section>
 
     
-<!-- Comunidad -->
-<section id="comunidad" class="py-20 px-6 bg-verdeingles text-center">
-  <h2 class="text-5xl font-semibold mb-6 text-white">Sumate a FINANZAS SALUDABLES</h2>
-  <p class="max-w-xl mx-auto mb-6 text-lg text-white">
-    Recibí recursos, novedades y muchas cosas más sobre nuestro ecosistema emprendedor.
-  </p>
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-16">
 
-  <!-- Formulario -->
-  <form id="formComunidad" class="max-w-xl mx-auto space-y-4">
-    <div class="text-left">
-      <label for="nombreUsuario" class="block text-sm font-medium text-white mb-1">Tu nombre:</label>
-      <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Ej: Juan Pérez"
-             class="w-full rounded-md border-gray-300 shadow-sm focus:border-azulino focus:ring focus:ring-azulino focus:ring-opacity-50 p-2" required>
+  <div class="rounded-2xl p-6 bg-verdepetroloscuro text-white shadow-md flex flex-col justify-between text-center hover:scale-105 transition min-h-[520px]">
+    <img src="images/vero.png" alt="Profesional Finanzas" class="w-40 h-40 rounded-2xl mb-4 object-cover mx-auto">
+    <div class="flex-grow">
+      <p class="text-lg text-white/90 mb-4">Verónica Diaz Arive</p>
+      <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+       <h3 class="text-xl font-semibold mb-2">COACHING FINANCIERO FINANZAS SOSTENIBLES</h3>
+      <p class="text-sm text-white/90 mb-4">Lic. en Economía, es la creadora de FINANZAS SALUDABLES y SANGHA, Fundadora de la EPB ( Escuela Productiva Bonaerense) como tyambien de la Incubadora de negocios de la UNLP, ofrece asesoramiento en costos, financiamiento, modelos de negocio y estrategias de sustentabilidad económica.</p>
     </div>
+    <a href="unidad4_finanzas.html" class="bg-white text-verdepetroloscuro font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition mt-auto">Contacto</a>
+  </div>
 
-    <div class="flex">
-      <input
-        id="correoUsuario"
-        type="email"
-        placeholder="Tu correo electrónico"
-        class="flex-grow px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none"
-        required
-      />
-      <button type="submit"
-        class="bg-azulbase text-white px-4 py-2 rounded-r-md hover:bg-azulino transition">
-        Suscribirme
-      </button>
+  <div class="rounded-2xl p-6 bg-verdepetro text-white shadow-md flex flex-col justify-between text-center hover:scale-105 transition min-h-[520px]">
+    <img src="images/diego.jpeg" alt="Profesional Fabricación" class="w-40 h-40 rounded-2xl mb-4 object-cover mx-auto">
+    <div class="flex-grow">
+      <p class="text-lg text-white/90 mb-4">Diego Velazco</p>
+           <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+       <h3 class="text-xl font-semibold mb-2">DISEÑO DE PRODUCTOS Y FABRICACIÓN DIGITAL</h3>
+      <p class="text-sm text-white/90 mb-4"> Diseñador Industrial, Especialista en Metodología y CEO de INKAO, estudio y consultora de Diseño Industrial. Especializado en Diseño y producción de productos en madera y metal. Modelado y diseño 3D, prototipado rápido y fabricación aditiva. Vincula diseño, tecnología y experimentación material.</p>
     </div>
-  </form>
+    <a href="unidad3_fabricacion.html" class="bg-white text-verdepetro font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition mt-auto">Contacto</a>
+  </div>
 
-  <!-- Mensaje de confirmación -->
-  <p id="mensajeSuscripcion" class="mt-6 text-green-100 hidden">¡Gracias por suscribirte!</p>
-</section>
+  <div class="rounded-2xl p-6 bg-azulpetrol text-white shadow-md flex flex-col justify-between text-center hover:scale-105 transition min-h-[520px]">
+    <img src="images/estefi.jpeg" alt="Profesional Gestión" class="w-40 h-40 rounded-2xl mb-4 object-cover mx-auto">
+    <div class="flex-grow">
+           <p class="text-lg text-white/90 mb-4">Estefanía Fondevila Sancet</p>
+        <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+        <h3 class="text-xl font-semibold mb-2">GESTIÓN DEL DISEÑO DE PRODUCTOS Y SERVICIOS</h3>
+      <p class="text-sm text-white/90 mb-4"> Esp. en Metodología y programadora web, Responsable de la consultora BLÖMS y fundadora del HUB de Diseño Industrial de la UNLa, desarrolla herramientas de planificación, diagnóstico, desarrollo y seguimiento de proyectos y emprendimientos. Articula con empresas, instituciones y equipos interdisciplinarios.</p>
+    </div>
+    <a href="unidad1_gestion.html" class="bg-white text-azulpetrol font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition mt-auto">Contacto</a>
+  </div>
 
-<!-- Botón flotante de WhatsApp con estilos corregidos -->
+  <div class="rounded-2xl p-6 bg-verdepetroloscuro text-white shadow-md flex flex-col justify-between text-center hover:scale-105 transition min-h-[520px]">
+    <img src="images/profesionales/humano.jpg" alt="Profesional Diseño Grafico" class="w-40 h-40 rounded-2xl mb-4 object-cover mx-auto">
+    <div class="flex-grow">
+     
+      <p class="text-lg text-white/90 mb-4">Claudio ... </p>
+        <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+       <h3 class="text-xl font-semibold mb-2">DISEÑO y COMUNICACION VISUAL</h3>
+            <p class="text-sm text-white/90 mb-4">Dueño del estudio FOCA, con experiencia internacional, centra su acción en el diseño comunicacional y web, con enfoque participativo para proyectos con impacto.</p>
+    </div>
+    <a href="unidad6_humano.html" class="bg-white text-verdepetroloscuro font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition mt-auto">Contacto</a>
+  </div>
+
+  <div class="rounded-2xl p-6 bg-verdepetro text-white shadow-md flex flex-col justify-between text-center hover:scale-105 transition min-h-[520px]">
+    <img src="images/profesionales/sustentable.jpg" alt="Profesional Economía" class="w-40 h-40 rounded-2xl mb-4 object-cover mx-auto">
+    <div class="flex-grow">
+    
+      <p class="text-lg text-white/90 mb-4">Facundo .... </p>
+        <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+          <h3 class="text-xl font-semibold mb-2">ECONOMIA PARA LA PRODUCCION</h3>
+      <p class="text-sm text-white/90 mb-4">Lic. en Economía, promueve el modelo de negocio responsable mediante estrategias sostenibles, análisis de ciclo de vida de los productos y criterios de circularidad.</p>
+    </div>
+    <a href="unidad2_sustentable.html" class="bg-white text-verdepetro font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition mt-auto">Contacto</a>
+  </div>
+
+  <div class="rounded-2xl p-6 bg-azulpetrol text-white shadow-md flex flex-col justify-between text-center hover:scale-105 transition min-h-[520px]">
+    <img src="images/profesionales/ia.jpg" alt="Profesional Gestion de calidad" class="w-40 h-40 rounded-2xl mb-4 object-cover mx-auto">
+    <div class="flex-grow">
+     
+      <p class="text-lg text-white/90 mb-4">Florencia .... </p>
+        <div class="border-t-4 border-verdementa mt-10 pt-6 text-xs text-center grid grid-cols-1 md:grid-cols-4 gap-4"></div>
+         <h3 class="text-xl font-semibold mb-2">GESTIÓN Y MADURACION DE EMPRENDIMIENTOS</h3>
+      <p class="text-sm text-white/90 mb-4">explora el potencial de los diferentes emprendimientos y su relación con la gestión de calidad aplicándolo al análisis de datos para la toma de decisiones.</p>
+    </div>
+    <a href="unidad5_ia.html" class="bg-white text-azulpetrol font-bold px-4 py-2 rounded-xl hover:bg-[#e6e6e6] transition mt-auto">Contacto</a>
+  </div>
+
+</div>
+
+</div>
+
+  
+    </div>
+  </section>
+
+  <!-- Botón flotante de WhatsApp con estilos corregidos -->
 <div class="fixed bottom-6 right-6 z-50">
   <a href="https://wa.me/5492215738117"
      target="_blank"
