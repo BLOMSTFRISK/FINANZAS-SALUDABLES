@@ -552,8 +552,8 @@
 
     if (!nombre || !email) return;
 
-    // Reemplazá esta URL con la que te dio SheetBest
-    const endpoint = "https://api.sheetbest.com/sheets/5c1c5dc7-d22e-4014-95d7-5005d25b56c2";
+    // Usamos nuestra API personalizada en Vercel para ocultar la API key de SheetBest
+    const endpoint = "https://guardar-api-sheetbest.vercel.app/api/guardarSuscripcion";
 
     const data = {
       nombre: nombre,
